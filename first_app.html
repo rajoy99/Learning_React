@@ -7,18 +7,34 @@
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+  <style>
+    #frznh {
+    	padding: 50px;
+    	background-color: #EEE;
+    }
+    #frznh h1 {
+    	font-size: 144px;
+		font-family: sans-serif;
+   	 color: #0080a8;
+    }
+</style>
+
 </head>
 
 <body>
 
-  <div id="frznh" align="center"> </div>
+  <div id="frznh" align="center" color=”#a123"> </div>
+
+
 
   <script type='text/babel'>
 
-    
+    var destination = document.querySelector('#frznh')
+
     ReactDOM.render(
     <h1> My name is Azhdaha</h1>,
-    document.querySelector('#frznh')
+    destination
     )
 
 
