@@ -25,11 +25,11 @@ const Footer = () => {
 
 const App = () => {
   return (
-    <div>
+    <>
       <h1>Greetings</h1>
       <Hello name="Maya" age={26 + 10} />
       <Footer />
-    </div>
+    </>
   )
 }
 
