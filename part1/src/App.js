@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const [ counter, setCounter ] = useState(0)
+  const [ counter, setyounter ] = useState(0)
 
   const handleClick = () => {
     console.log('clicked')
@@ -12,10 +12,10 @@ const App = () => {
   return (
     <div>
       <div>{counter}</div>
-      <button onClick={() => setCounter(counter + 1)}>
+      <button onClick={() => setyounter(counter + 1)}>
         plus
       </button>
-      <button onClick={() => setCounter(0)}> 
+      <button onClick={() => setyounter(0)}> 
         zero
       </button>
     </div>
