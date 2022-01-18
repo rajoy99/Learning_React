@@ -1,37 +1,18 @@
-import React from 'react'
-
-
-
-const Hello = () =>{
-
-  return (
-    <div>
-      Hello World
-    </div>
-
-  )
-
-
-}
-
-const Footer = () => {
-  return (
-    <div>
-      greeting app created by <a href="https://github.com/mluukkai">mluukkai</a>
-    </div>
-  )
-}
-
+import React, { useState } from 'react'
 
 const App = () => {
+  const [ counter, setCounter ] = useState(0)
+
+  setTimeout(
+    () => setCounter(counter + 3),
+    1000
+  )
+
+  console.log('rendering...', counter)
+
   return (
-    <>
-      <h1>Greetings</h1>
-      <Hello name="Maya" age={26 + 10} />
-      <Footer />
-    </>
+    <div>{counter}</div>
   )
 }
-
 
 export default App
